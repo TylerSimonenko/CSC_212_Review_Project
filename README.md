@@ -1,4 +1,5 @@
-<b>CSC 212 - MEC Review Project</b>
+<b>MEC Review Project</b><br>
+<b>CSC 212</b>
 
 <b>Group Members:</b><br> 
 Tyler Simonenko<br>
