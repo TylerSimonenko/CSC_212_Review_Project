@@ -1,6 +1,9 @@
 CSC 212 - MEC Review Project
 
-Group Members: Tyler Simonenko, Nick Marshall, Darryl Fleurantin
+Group Members:<br>
+Tyler Simonenko <br>
+Nick Marshall <br>
+Darryl Fleurantin
 
 Summary: <br>
 As a student in college, knowing your current standing in a class is important in determining if you should reach out for
