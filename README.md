@@ -20,7 +20,8 @@ The MEC Review Project allows students to build a tool which allows them to calc
 [MEC Planning](https://user-images.githubusercontent.com/68083538/198410520-940a4e30-887f-4d0b-9d44-dc6343940cc2.jpg)
 
 
-GitHub Repo Address: https://github.com/TylerSimonenko/CSC_212_Review_Project
+<b>GitHub Repo Address:</b><br>
+https://github.com/TylerSimonenko/CSC_212_Review_Project
 
 
 Algorithm Features and Description:<br>
