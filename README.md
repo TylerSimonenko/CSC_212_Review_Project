@@ -11,5 +11,7 @@ an "A" for the class, a passing grade, or a failing grade).
 
 The MEC Review Project aims to have students build a working grade calculator for the class (CSC 212). Using structures
 learned within CSC 211, students are required to provide an algorithm that will calculate your current standing in the class
-based off of what assignments/exams/projects/labs have been completed thus far. 
+based off of what assignments/exams/projects/labs have been completed thus far.
+
+
 [MEC Review Project Notes.pdf](https://github.com/TylerSimonenko/CSC_212_Review_Project/files/9883488/MEC.Review.Project.Notes.pdf)
