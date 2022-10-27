@@ -7,20 +7,16 @@ Nick Marshall<br>
 Darryl Fleurantin<br>
 
 <b>Summary:</b> <br>
-As a student in college, knowing your current standing in a class is important in determining if you should reach out for
-help, drop the class, or determine what score on a particular assignment may allow you to earn a certain grade in the class.
-For example, if a student has completed all assignments, labs, and projects for a class, but the final exam remains, it would
-be useful for the student to know the impact a certain grade on the final exam will have on their course grade (earning them
-an "A" for the class, a passing grade, or a failing grade).
+As a student in college, knowing your current standing in a class is important. Being able to calculate your current grade will help you know how to proceed in the course - if you're doing well, you can feel confident about your study habits and the subject matter. If you're doing poorly, it may be wise to seek help to try and develop your understanding of the subject more. One of the reasons knowing your current standing is important is to determine how you may need to score on an upcoming assignment to receive a certain grade in the class. For example, if a student has completed all assignments, labs, and projects for a class, but the final exam remains, it would be useful for the student to know what score they needed to, say, pass the class or receieve an "A".
 
-The MEC Review Project aims to have students build a working grade calculator for the class (CSC 212). Using structures
-learned within CSC 211, students are required to provide an algorithm that will calculate your current standing in the class
-based off of what assignments/exams/projects/labs have been completed thus far.
+The MEC Review Project allows students to build a tool which allows them to calculate their current standing for a class. For this specific project, the class grade that will be calculated will be for CSC 212. Using the structures and methods introduced within CSC 211, students are required to provide an algorithm that will provide an accurate current standing based on the specific weights and assignments that are required within CSC 212.
 
 
+<b>Preliminary Notes Document:</b><br>
 [MEC Review Project Notes](https://github.com/TylerSimonenko/CSC_212_Review_Project/files/9883488/MEC.Review.Project.Notes.pdf)
 
 
+<b>Preliminary Whiteboard Sketch:</b><br>
 [MEC Planning](https://user-images.githubusercontent.com/68083538/198410520-940a4e30-887f-4d0b-9d44-dc6343940cc2.jpg)
 
 
