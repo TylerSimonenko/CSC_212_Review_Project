@@ -3,6 +3,7 @@ CSC 212 - MEC Review Project
 Group Members: Tyler Simonenko, Nick Marshall, Darryl Fleurantin
 
 Summary:
+
 As a student in college, knowing your current standing in a class is important in determining if you should reach out for
 help, drop the class, or determine what score on a particular assignment may allow you to earn a certain grade in the class.
 For example, if a student has completed all assignments, labs, and projects for a class, but the final exam remains, it would
