@@ -5,7 +5,6 @@
 Tyler Simonenko<br>
 Nick Marshall<br>
 Darryl Fleurantin<br>
-Chun Wen<br>
 
 Summary: <br>
 As a student in college, knowing your current standing in a class is important in determining if you should reach out for
@@ -24,4 +23,5 @@ based off of what assignments/exams/projects/labs have been completed thus far.
 
 [MEC Planning](https://user-images.githubusercontent.com/68083538/198410520-940a4e30-887f-4d0b-9d44-dc6343940cc2.jpg)
 
-https://github.com/TylerSimonenko/CSC_212_Review_Project.git
+
+GitHub Repo Address: https://github.com/TylerSimonenko/CSC_212_Review_Project
