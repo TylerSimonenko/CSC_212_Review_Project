@@ -5,6 +5,7 @@
 Tyler Simonenko<br>
 Nick Marshall<br>
 Darryl Fleurantin<br>
+Chun Wen<br>
 
 Summary: <br>
 As a student in college, knowing your current standing in a class is important in determining if you should reach out for
