@@ -1,9 +1,6 @@
 CSC 212 - MEC Review Project
 
-Group Members:<br>
-Tyler Simonenko <br>
-Nick Marshall <br>
-Darryl Fleurantin
+Group Members: Tyler Simonenko, Nick Marshall, Darryl Fleurantin
 
 Summary: <br>
 As a student in college, knowing your current standing in a class is important in determining if you should reach out for
@@ -20,4 +17,4 @@ based off of what assignments/exams/projects/labs have been completed thus far.
 [MEC Review Project Notes.pdf](https://github.com/TylerSimonenko/CSC_212_Review_Project/files/9883488/MEC.Review.Project.Notes.pdf)
 
 
-![MEC_Planning](https://user-images.githubusercontent.com/68083538/198410520-940a4e30-887f-4d0b-9d44-dc6343940cc2.jpg)
+![MEC_Planning](https://user-images.githubusercontent.com/68083538/198410520-940a4e30-887f-4d0b-9d44-dc6343940cc2.jpg =250x250)
