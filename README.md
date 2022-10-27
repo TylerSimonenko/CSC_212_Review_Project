@@ -35,11 +35,4 @@ The development of the group's code was methodic and deliberate. We thought it w
 
 
 <b>Instructions:</b><br>
-
-
-
-
-
-
-
-
+To run the algorithm, first you must download the main.cpp file and its dependencies (gradebook.h and gradebook.cpp). Once the main.cpp file is compiled (there are no necessary command line arguments), the user will be asked to input their information/data (which includes their name, the number of completed assignments and labs, and whether or not the exam and projects have been completed). The user can simply input their data and then press enter - there is no specific syntax or sentence structure to be used. Once the user is guided through each step of the data gathering process, the algorithm will provide the user with their grade, as a .txt file, without any extra input.
