@@ -24,12 +24,22 @@ The MEC Review Project allows students to build a tool which allows them to calc
 https://github.com/TylerSimonenko/CSC_212_Review_Project
 
 
-Algorithm Features and Description:<br>
-Inputs from user include: # of completed labs, assignments, exams, and projects. Then, input doubles as the scores recieved for each of the labs/assignments/exams/projects. The student's name.<br>
-Output is a single .txt with all of the student's information - this includes the final calculated grade for the student, as well as the inputs the student gave for their grades.<br>
-It was important to understand each step of the calculations first before tackling the exceptions. At first, we made sure the calculations were correct for the case in which the student had completed each and every graded submission. Once the group understood the process for that case, we were able to work backwords and handle the exceptions (when the student had not yet completed certain assignments, labs, exams, or projects). It was important for the group to detail the process first in pseudocode and writing so that each feature of the code was accounted for and then handled.
+<b>Algorithm Features and Description:</b><br>
+Our algorithm first asks the user for their full name. Second, the user will be asked for the number of assignments and labs (as an integer) that have been completed and graded. Then, they will be asked if they have completed the review project, final project, and the final exam. Once this data is gathered, the algorithm will ask the user to input the points that they received for each of the graded submissions (as a double) - the user will only be asked to provide as many grades as previously determined.
 
 
-Instructions:<br>
-These are the instructions
+The output of the code is a single ".txt" file which includes the student's information. This includes their name, final calculated grade, and each of the grades that they input to calculate their final grade. 
+
+
+The development of the group's code was methodic and deliberate. We thought it was important to understand each step of the calculations first before tackling the main goal of the code (including the exceptions). At first, we made sure the calculations were correct for the case in which the student had completed each and every graded submission (this case would be the student's final grade for the entire class, not just the student's current standing). Once we understood the process for that case, we were able to work backwords and handle the exceptions, which were when the student had not yet completed certain assignments, labs, exams, or projects. In this case, each graded submission would be weighted differently as compared to the case in which every submission was completed. Working through each step with pseudocode and whiteboards helped us to make sure we accounted for each required detail. 
+
+
+<b>Instructions:</b><br>
+
+
+
+
+
+
+
 
