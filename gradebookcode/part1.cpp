@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//function to get the amount of each graded activity the student has completed
 vector<double> grade::getAmounts() {
     vector<double> amounts;
     double labs, assignments, revProject, termProject, exam;
@@ -11,6 +12,7 @@ vector<double> grade::getAmounts() {
     cout << "How many labs have you completed?" << endl;
     cin >> labs; 
    
+   //each while loop is error checking to ensure the input is within a valid range
     while (labs > 10 || labs <= 0) {
         cout << "Invalid input" << endl;
         cout << "How many labs have you completed?" << endl;
@@ -54,7 +56,7 @@ vector<double> grade::getAmounts() {
         cin >> exam;
     }
 
-
+    //adding each amount to a vector, "amounts"
     amounts.push_back(labs); //labs = amounts[0]
     amounts.push_back(assignments); //assignments = amounts[1]
     amounts.push_back(revProject); //review project = amounts[2]
@@ -64,28 +66,36 @@ vector<double> grade::getAmounts() {
     return amounts; 
 }
 
+//function to get the grades of each completed graded activity 
 double grade::getGrades(vector <double> amounts) {
-    vector <double> pointsEarned; 
-    double totalEarned = 0; 
+    vector <double> pointsEarned; //vector of total points earned by each activity
+    double totalEarned = 0; //total points earned in the class
     
+    //outer loop goes through each of the 5 categories in this class for grades
+    //labs, assignments, exams, term project and review project
     for (int i = 0; i < 5; i++) {
 
-        double earned = 0.0;
+        double earned = 0.0; //the total amount of points earned by each activity
 
+        //inner loop goes through the specific amount of each type of graded activity
         for (int j = 0; j < amounts[i]; j++) {
 
-            double score;
+            double score; //the score of each individual activity
 
+            //when i = 0, we're looking at labs
             if (i == 0 && amounts[0] != 0) {
                 cout << "What was your grade for lab " << j + 1 << "?" << endl;
                 cin >> score;
+                //while loops are error checking to ensure the input percentage is between 0 and 100
                 while (score > 100 || score < 0) {
                     cout << "Invalid input" << endl;
                     cout << "What was your grade for lab " << j + 1 << "?" << endl; 
                     cin >> score;
                 }
-                earned += score * 5;
+                earned += score * 5; //labs are each worth 5 points
             }
+
+            //when i = 1, we're looking at assignments
             if (i == 1 && amounts[1] != 0) {
                 cout << "What was your grade for assignment " << j + 1 << "?" << endl;
                 cin >> score;
@@ -94,8 +104,10 @@ double grade::getGrades(vector <double> amounts) {
                     cout << "What was your grade for assignment " << j + 1 << "?" << endl; 
                     cin >> score;
                 }
-                earned += score * 100;
+                earned += score * 100; //assignments are each worth 100 points
             }
+
+            //when i = 2, we're looking at the review project
             if (i == 2 && amounts[2] != 0) {
                 cout << "What was your grade for the review project?" << endl;
                 cin >> score;
@@ -104,8 +116,10 @@ double grade::getGrades(vector <double> amounts) {
                     cout << "What was your grade for the review project?" << endl; 
                     cin >> score;
                 }
-                earned += score * 30;
+                earned += score * 30; //the review project is worth 30 points
             }
+
+            //when i = 3, we're looking at the term project
             if (i == 3 && amounts[3] != 0) {
                 cout << "What was your grade for the term project?" << endl;
                 cin >> score;
@@ -114,8 +128,10 @@ double grade::getGrades(vector <double> amounts) {
                     cout << "What was your grade for the term project?" << endl; 
                     cin >> score;
                 }
-                earned += score * 350;
+                earned += score * 350; //the term project is worth 350 points
             }
+
+            //when i = 4, we're looking at the final exam
             if (i == 4 && amounts[4] != 0) {
                 cout << "What was your grade for the final exam?" << endl;
                 cin >> score;
@@ -124,7 +140,7 @@ double grade::getGrades(vector <double> amounts) {
                     cout << "What was your grade for the final exam?" << endl; 
                     cin >> score;
                 }
-                earned += score * 100;
+                earned += score * 100; //the final exam is worth 100 points
             }
 
         }
@@ -132,34 +148,38 @@ double grade::getGrades(vector <double> amounts) {
         pointsEarned.push_back(earned);
     }
 
+    //adding all of the elements of pointsEarned
     for (int i = 0; i < pointsEarned.size(); i++) {
 
         totalEarned += pointsEarned[i];
 
     }
+
     return totalEarned;
 }
 
+//function to determnine the possible amount of points that could have been earned in the class so far
 double grade::getPossPoints(vector<double> amounts) { 
 
-    double possPoints; 
+    double possPoints; //amount of points possible
 
+    //loops through the amount of each activity
     for (int i = 0; i < amounts.size(); i++) {
 
         if (i == 0) {
-            possPoints += amounts[0] * 5;
+            possPoints += amounts[0] * 5; //adds amount of points possibly scored by labs 
         }
         if (i == 1) {
-            possPoints += amounts[1] * 100;
+            possPoints += amounts[1] * 100; //adds amount of points possibly scored by assignments
         }
         if (i == 2) {
-            possPoints += amounts[2] * 30;
+            possPoints += amounts[2] * 30; //adds amount of points possibly scored by the review project
         }
         if (i == 3) {
-            possPoints += amounts[3] * 350;
+            possPoints += amounts[3] * 350; //adds amount of points possibly scored by the term project
         }
         if (i == 4) {
-            possPoints += amounts[4] * 100;
+            possPoints += amounts[4] * 100; //adds amount of points possibly scored by the final exam
         }
 
     }
@@ -167,13 +187,15 @@ double grade::getPossPoints(vector<double> amounts) {
     return possPoints; 
 }
 
+//function to determine the final percentage score and letter grade in the class
 double grade::getFinalScore(double possPoints, double totalEarned) {
 
-    double finalScore = totalEarned/possPoints;
+    double finalScore = totalEarned/possPoints; //points actually earned/potential points
 
     return finalScore; 
 }
 
+//function to output letter grade and score
 void grade::showScore(double finalScore) {
     string letterGrade;
     if (finalScore < 60) {
@@ -212,4 +234,3 @@ void grade::showScore(double finalScore) {
 
     cout << endl << "Your current score is " << finalScore << "% which is a " << letterGrade << " in this class.";
 }
-
