@@ -26,7 +26,7 @@ https://github.com/TylerSimonenko/CSC_212_Review_Project
 
 
 <b>Algorithm Features and Description:</b><br>
-Our algorithm first asks the user for their full name. Second, the user will be asked for the number of assignments and labs (as an integer) that have been completed and graded. Then, they will be asked if they have completed the review project, final project, and the final exam. Once this data is gathered, the algorithm will ask the user to input the points that they received for each of the graded submissions (as a double) - the user will only be asked to provide as many grades as previously determined.
+Our algorithm first asks the user for their full name. Second, the user will be asked for the number of assignments and labs (as an integer) that have been completed and graded. Then, they will be asked if they have completed the review project, final project, and the final exam. Once this data is gathered, the algorithm will ask the user to input the grade percentage that they received for each of the graded submissions (as a double) - the user will only be asked to provide as many grades as previously determined. The grade percentages must be calculated by the user - the algorithm will expect a grade value between 0-100, rather than asking for a point value which can range for some graded submissions.
 
 
 The output of the code is a single ".txt" file which includes the student's information. This includes their name, final calculated grade, and each of the grades that they input to calculate their final grade. 
