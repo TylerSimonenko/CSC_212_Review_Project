@@ -10,18 +10,50 @@ vector<double> grade::getAmounts() {
 
     cout << "How many labs have you completed?" << endl;
     cin >> labs; 
+   
+    while (labs > 10 || labs <= 0) {
+        cout << "Invalid input" << endl;
+        cout << "How many labs have you completed?" << endl;
+        cin >> labs;
+    }
 
     cout << "How many assignments have you completed?" << endl;
     cin >> assignments;
 
+    while (assignments > 5 || assignments <= 0) {
+        cout << "Invalid input" << endl;
+        cout << "How many assignments have you completed?" << endl;
+        cin >> assignments;
+    }
+
     cout << "Have you completed the MEC Project? (1 for yes, 0 for no)." << endl;
     cin >> revProject;
+
+    while (revProject != 0 && revProject != 1) {
+        cout << "Invalid input" << endl;
+        cout << "Have you completed the MEC Project? (1 for yes, 0 for no)." << endl;
+        cin >> revProject;
+    }
 
     cout << "Have you completed the Term Project? (1 for yes, 0 for no)." << endl;
     cin >> termProject;
 
+    while (termProject != 0 && termProject != 1) {
+        cout << "Invalid input" << endl;
+        cout << "Have you completed the term Project? (1 for yes, 0 for no)." << endl;
+        cin >> termProject;
+    }
+
+
     cout << "Have you completed the final exam? (1 for yes, 0 for no)." << endl;
     cin >> exam;
+
+    while (exam != 0 && exam != 1) {
+        cout << "Invalid input" << endl;
+        cout << "Have you completed the final exam? (1 for yes, 0 for no)." << endl;
+        cin >> exam;
+    }
+
 
     amounts.push_back(labs); //labs = amounts[0]
     amounts.push_back(assignments); //assignments = amounts[1]
@@ -47,26 +79,51 @@ double grade::getGrades(vector <double> amounts) {
             if (i == 0 && amounts[0] != 0) {
                 cout << "What was your grade for lab " << j + 1 << "?" << endl;
                 cin >> score;
+                while (score > 100 || score < 0) {
+                    cout << "Invalid input" << endl;
+                    cout << "What was your grade for lab " << j + 1 << "?" << endl; 
+                    cin >> score;
+                }
                 earned += score * 5;
             }
             if (i == 1 && amounts[1] != 0) {
                 cout << "What was your grade for assignment " << j + 1 << "?" << endl;
                 cin >> score;
+                while (score > 100 || score < 0) {
+                    cout << "Invalid input" << endl;
+                    cout << "What was your grade for assignment " << j + 1 << "?" << endl; 
+                    cin >> score;
+                }
                 earned += score * 100;
             }
             if (i == 2 && amounts[2] != 0) {
                 cout << "What was your grade for the review project?" << endl;
                 cin >> score;
+                while (score > 100 || score < 0) {
+                    cout << "Invalid input" << endl;
+                    cout << "What was your grade for the review project?" << endl; 
+                    cin >> score;
+                }
                 earned += score * 30;
             }
             if (i == 3 && amounts[3] != 0) {
                 cout << "What was your grade for the term project?" << endl;
                 cin >> score;
+                while (score > 100 || score < 0) {
+                    cout << "Invalid input" << endl;
+                    cout << "What was your grade for the term project?" << endl; 
+                    cin >> score;
+                }
                 earned += score * 350;
             }
             if (i == 4 && amounts[4] != 0) {
                 cout << "What was your grade for the final exam?" << endl;
                 cin >> score;
+                while (score > 100 || score < 0) {
+                    cout << "Invalid input" << endl;
+                    cout << "What was your grade for the final exam?" << endl; 
+                    cin >> score;
+                }
                 earned += score * 100;
             }
 
@@ -153,17 +210,6 @@ void grade::showScore(double finalScore) {
         letterGrade = "A";
     }
 
-    cout << "Your current score is " << finalScore << "% which is a " << letterGrade << " in this class.";
+    cout << endl << "Your current score is " << finalScore << "% which is a " << letterGrade << " in this class.";
 }
 
-int main() {
-    grade grade;
-
-    vector<double> amounts = grade.getAmounts();
-    double totalEarned = grade.getGrades(amounts); //pointsEarned[0] = labs, 1 = ass, 2 = projects, 3 = exams
-    double possPoints = grade.getPossPoints(amounts); 
-    double finalScore = grade.getFinalScore(possPoints, totalEarned);
-    grade.showScore(finalScore);
-
-    return 0;
-}
