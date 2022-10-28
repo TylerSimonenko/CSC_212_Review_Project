@@ -5,6 +5,7 @@
 Tyler Simonenko<br>
 Nick Marshall<br>
 Darryl Fleurantin<br>
+Chun Wen<br>
 
 <b>Summary:</b> <br>
 As a student in college, knowing your current standing in a class is important. Being able to calculate your current grade will help you know how to proceed in the course - if you're doing well, you can feel confident about your study habits and the subject matter. If you're doing poorly, it may be wise to seek help to try and develop your understanding of the subject more. One of the reasons knowing your current standing is important is to determine how you may need to score on an upcoming assignment to receive a certain grade in the class. For example, if a student has completed all assignments, labs, and projects for a class, but the final exam remains, it would be useful for the student to know what score they needed to, say, pass the class or receieve an "A".
