@@ -1,5 +1,8 @@
-#include "part1.h"
 #include <iostream>
+#include <vector>
+#include "part1.h"
+
+using namespace std;
 
 int main() {
     grade grade;
